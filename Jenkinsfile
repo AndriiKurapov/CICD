@@ -23,6 +23,8 @@ pipeline {
         stage('Deploy to Prod') {
             steps {
                 sh '''
+                scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project1/Script.sh centos@172.31.5.207:/home/centos/Script.sh
+                scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project1/Dockerfile centos@172.31.5.207:/home/centos/Dockerfile
                 scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project1/target/HTTPRequest-1.0-SNAPSHOT.war centos@172.31.5.207:/home/centos/webapp.war
                 ssh -i /home/ubuntu/.ssh/1stInstancePair.pem centos@172.31.5.207 ./Script.sh
                 '''
