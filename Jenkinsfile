@@ -11,7 +11,7 @@ pipeline {
         stage('Build/Test') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/AndriiKurapov/Calculator-Servlet'
+                git 'git@github.com:AndriiKurapov/CICD.git'
 
                 // Run Maven on a Unix agent.
                 sh '''
