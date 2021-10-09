@@ -16,6 +16,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh '''
                 mvn clean install package
+                mv /home/ubuntu/jenkins/workspace/Project4/target/HTTPRequest-1.0-SNAPSHOT.war /home/ubuntu/jenkins/workspace/Project4/webapp.war
                 sudo ./home/ubuntu/jenkins/workspace/Project4/Script.sh
                 '''
             }
