@@ -16,7 +16,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh '''
                 mvn clean install package
-                sudo /home/ubuntu/jenkins/workspace/Project4/Script.sh
+                sudo ./home/ubuntu/jenkins/workspace/Project4/Script.sh
                 '''
             }
         }
