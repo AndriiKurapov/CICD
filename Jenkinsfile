@@ -26,7 +26,7 @@ pipeline {
                 sh '''
                 scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project4/Script.sh centos@172.31.5.207:/home/centos/Script.sh
                 scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project4/Dockerfile centos@172.31.5.207:/home/centos/Dockerfile
-                scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project4/target/HTTPRequest-1.0-SNAPSHOT.war centos@172.31.5.207:/home/centos/webapp.war
+                scp -i /home/ubuntu/.ssh/1stInstancePair.pem /home/ubuntu/jenkins/workspace/Project4/webapp.war centos@172.31.5.207:/home/centos/webapp.war
                 ssh -i /home/ubuntu/.ssh/1stInstancePair.pem centos@172.31.5.207 ./Script.sh
                 '''
             }
