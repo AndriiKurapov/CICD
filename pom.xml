@@ -6,7 +6,6 @@
 
     <groupId>HTTPRequest</groupId>
     <artifactId>webapp</artifactId>
-    <version></version>
     <packaging>war</packaging>
     
     <properties>
