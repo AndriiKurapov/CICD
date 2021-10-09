@@ -5,8 +5,8 @@
      
 
     <groupId>HTTPRequest</groupId>
-    <artifactId>HTTPRequest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>webapp</artifactId>
+    <version></version>
     <packaging>war</packaging>
     
     <properties>
