@@ -1,3 +1,4 @@
+#!/bin/sh
 docker stop Prod || true
 docker rm Prod || true
 docker rmi docker-tomcat-webapp || true
