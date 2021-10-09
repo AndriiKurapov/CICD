@@ -16,7 +16,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh '''
                 mvn clean install package
-                ./Script.sh
+                sudo ./Script.sh
                 '''
             }
         }
