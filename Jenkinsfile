@@ -10,10 +10,6 @@ pipeline {
     stages {
         stage('Build/Test') {
             steps {
-                // Get some code from a GitHub repository
-                //git 'https://github.com/AndriiKurapov/CICD.git'
-
-                // Run Maven on a Unix agent.
                 sh '''
                 mvn clean install package
                 cp /home/ubuntu/jenkins/workspace/Project4/target/webapp-1.0.war /home/ubuntu/jenkins/workspace/Project4/webapp.war
