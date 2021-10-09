@@ -19,7 +19,7 @@ pipeline {
                 mv /home/ubuntu/jenkins/workspace/Project4/target/HTTPRequest-1.0-SNAPSHOT.war /home/ubuntu/jenkins/workspace/Project4/webapp.war
                 mv /home/ubuntu/jenkins/workspace/Project4/Script.sh /home/ubuntu/Script.sh
                 mv /home/ubuntu/jenkins/workspace/Project4/Dockerfile /home/ubuntu/Dockerfile
-                sudo ./Script.sh
+                bash /home/ubuntu/Script.sh
                 '''
             }
         }
