@@ -17,6 +17,11 @@ pipeline {
                 input(message: 'Deploy to production?', ok: 'Yes!') 
             }
         }
+        stage('Send notification') {
+            steps {
+                mail bcc: '', body: 'Please check the functionality of the application!', cc: '', from: '', replyTo: '', subject: 'App deployed on test environment!', to: 'andreykawwee@gmail.com'
+            }
+        }    
         stage('Deploy to Prod') {
             steps {
                 sh '''
