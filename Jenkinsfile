@@ -14,7 +14,7 @@ pipeline {
                 cp /home/ubuntu/jenkins/workspace/Project4/target/webapp-1.0.war /home/ubuntu/jenkins/workspace/Project4/webapp.war
                 bash /home/ubuntu/jenkins/workspace/Project4/Script.sh
                 '''
-                mail bcc: '', body: 'Please check the functionality of the application!', cc: '', from: '', replyTo: '', subject: 'App deployed on test environment! Link: http://3.66.111.211:8090/webapp/CalculatorServlet', to: 'andreykawwee@gmail.com'
+                mail bcc: '', body: 'Please check the functionality of the application!  Link: http://3.66.111.211:8090/webapp/CalculatorServlet', cc: '', from: '', replyTo: '', subject: 'App deployed on test environment!', to: 'andreykawwee@gmail.com'
                 input(message: 'Deploy to production?', ok: 'Yes!') 
             }
         }  
