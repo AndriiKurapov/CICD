@@ -10,7 +10,7 @@ pipeline {
         stage('Build/Test') {
             steps {
                 sh '''
-                mvn clean install package
+                mvn clean package
                 mv /home/ubuntu/jenkins/workspace/Project4/target/webapp-1.0.war /home/ubuntu/jenkins/workspace/Project4/webapp.war
                 bash /home/ubuntu/jenkins/workspace/Project4/Script.sh
                 '''
