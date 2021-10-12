@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Build/Test') {
+        stage('Build and deploy to test env') {
             steps {
                 sh '''
                 mvn clean package
